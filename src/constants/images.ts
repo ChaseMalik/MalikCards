@@ -1,15 +1,16 @@
 import { range } from 'lodash';
 
-const getImagesForRange = (folder: string, count: number) => {
+const getImagesForRange = (folder: string, count: number = 14) => {
     return range(0, count)
         .map(index => require(`../images/${folder}/${index}.jpg`))
         .map(src => ({ src }));
 }
 
-export const CHEER = getImagesForRange('2016-cheer', 13);
-export const WONDER = getImagesForRange('2014-wonder', 13);
-export const JOY = getImagesForRange('2012-joy', 14);
-export const PEACE = getImagesForRange('2010-peace', 14);
-export const HOPE = getImagesForRange('2008-hope', 14);
+const MAGIC = getImagesForRange('2018-magic', 1);
+const CHEER = getImagesForRange('2016-cheer');
+const WONDER = getImagesForRange('2014-wonder');
+const JOY = getImagesForRange('2012-joy');
+const PEACE = getImagesForRange('2010-peace');
+const HOPE = getImagesForRange('2008-hope');
 
-export const ALL_IMAGES = [CHEER, WONDER, JOY, PEACE, HOPE];
+export const ALL_IMAGES = [MAGIC, CHEER, WONDER, JOY, PEACE, HOPE];
