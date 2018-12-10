@@ -13,13 +13,16 @@ const theme = createMuiTheme({
   palette: {
     primary: deepOrange,
   },
+  typography: {
+    useNextVariants: true,
+  },
 });
 
 class App extends Component {
   render() {
     const imageLinks = ALL_IMAGES.map((images) => {
       return (
-        <Grid item xs={12} md={6} lg={4}>
+        <Grid item xs={12} sm={6} lg={4} key={images[0].src}>
           <CustomLightbox images={images} />
         </Grid>
       );
