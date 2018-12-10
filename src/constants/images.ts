@@ -1,16 +1,18 @@
-import { range } from 'lodash';
-
-const getImagesForRange = (folder: string, count: number = 14) => {
-    return range(0, count)
-        .map(index => require(`../images/${folder}/${index}.jpg`))
-        .map(src => ({ src }));
+const getLinksFromGooglePhotosResponse = (path: string) => {
+    const response = require(`../images/${path}.json`);
+    return response.mediaItems.sort((a, b) => {
+        return a.filename.split('.')[0] - b.filename.split('.')[0];
+    }).map(item => {
+        const src = `${item.baseUrl}=w${item.mediaMetadata.width}-h${item.mediaMetadata.height}`;
+        return { src };
+    });
 }
 
-const MAGIC = getImagesForRange('2018-magic', 1);
-const CHEER = getImagesForRange('2016-cheer');
-const WONDER = getImagesForRange('2014-wonder');
-const JOY = getImagesForRange('2012-joy');
-const PEACE = getImagesForRange('2010-peace');
-const HOPE = getImagesForRange('2008-hope');
+const MAGIC = getLinksFromGooglePhotosResponse('2018-magic');
+const CHEER = getLinksFromGooglePhotosResponse('2016-cheer');
+const WONDER = getLinksFromGooglePhotosResponse('2014-wonder');
+const JOY = getLinksFromGooglePhotosResponse('2012-joy');
+const PEACE = getLinksFromGooglePhotosResponse('2010-peace');
+const HOPE = getLinksFromGooglePhotosResponse('2008-hope');
 
 export const ALL_IMAGES = [MAGIC, CHEER, WONDER, JOY, PEACE, HOPE];
