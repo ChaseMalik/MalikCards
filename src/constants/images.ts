@@ -84,4 +84,4 @@ const HOPE = [
 ];
 
 export const ALL_IMAGES = [MAGIC, CHEER, WONDER, JOY, PEACE, HOPE]
-    .map(images => images.map(src => ({ src })));
+    .map(images => images.map(source => ({ source })));

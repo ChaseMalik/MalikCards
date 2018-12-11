@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     const imageLinks = ALL_IMAGES.map((images) => {
       return (
-        <Grid item xs={12} sm={6} lg={4} key={images[0].src}>
+        <Grid item xs={12} sm={6} lg={4} key={images[0].source}>
           <CustomLightbox images={images} />
         </Grid>
       );
@@ -32,8 +32,8 @@ class App extends Component {
         <header>
           <Header />
         </header>
-        <main className="app-container" style={{ padding: 12 }}>
-          <Grid container spacing={24} alignItems="center">
+        <main className="app-container main-container">
+          <Grid container spacing={16} alignItems="center">
             {/* <Grid item xs={12} container justify="center"> */}
             {imageLinks}
           </Grid>

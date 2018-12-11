@@ -1,5 +1,7 @@
+import './CustomLightbox.css';
+
 import React, { Component } from 'react';
-import Lightbox, { Image } from 'react-images';
+import Carousel, { Image, Modal, ModalGateway } from 'react-images';
 
 interface Props {
     images: Image[];
@@ -15,47 +17,29 @@ export default class CustomLightbox extends Component<Props, any> {
             currentImage: 0,
         };
     }
-    openLightbox = (index: number, event) => {
-        event.preventDefault();
-        this.setState({
-            currentImage: index,
-            lightboxIsOpen: true,
-        });
-    }
-    closeLightbox = () => {
-        this.setState({
-            currentImage: 0,
-            lightboxIsOpen: false,
-        });
-    }
-    gotoPrevious = () => {
-        this.setState({
-            currentImage: this.state.currentImage - 1,
-        });
-    }
-    gotoNext = () => {
-        this.setState({
-            currentImage: this.state.currentImage + 1,
-        });
-    }
+    toggleLightbox = (selectedIndex: number) => {
+        this.setState(state => ({
+            selectedIndex,
+            lightboxIsOpen: !state.lightboxIsOpen,
+        }));
+    };
 
     public render() {
         return (
             <>
-                <a
-                    href={this.props.images[0].src}
-                    onClick={(e) => this.openLightbox(0, e)}
-                >
-                    <img src={this.props.images[0].src} style={{ maxWidth: '100%' }} />
-                </a>
-                <Lightbox
-                    currentImage={this.state.currentImage}
-                    images={this.props.images}
-                    isOpen={this.state.lightboxIsOpen}
-                    onClickPrev={this.gotoPrevious}
-                    onClickNext={this.gotoNext}
-                    onClose={this.closeLightbox}
-                />
+                <div className="card-cover" onClick={() => this.toggleLightbox(0)}>
+                    <img src={this.props.images[0].source} />
+                </div>
+                <ModalGateway>
+                    {this.state.lightboxIsOpen ? (
+                        <Modal onClose={this.toggleLightbox}>
+                            <Carousel
+                                views={this.props.images}
+                                currentIndex={this.state.currentImage}
+                            />
+                        </Modal>
+                    ) : null}
+                </ModalGateway>
             </>
         );
     }

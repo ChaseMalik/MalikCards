@@ -1,0 +1,8 @@
+.card-cover:hover {
+    opacity: 0.9;
+}
+
+.card-cover img {
+    max-width: 100%;
+    cursor: pointer;
+}

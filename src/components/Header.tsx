@@ -9,6 +9,7 @@ import React from 'react';
 const styles: StyleRulesCallback = theme => ({
     appBar: {
         position: 'relative',
+        zIndex: 0,
     },
     icon: {
         marginRight: theme.spacing.unit * 2,
