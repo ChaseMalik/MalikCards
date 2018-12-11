@@ -1,9 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Generating json file
-1. Go to https://developers.google.com/photos/library/reference/rest/v1/albums/list to get list of albums
-2. Take album id and use https://developers.google.com/photos/library/reference/rest/v1/mediaItems/search to search by album id
-3. Use that response for json file
+### Generating url
+1. Create google album
+2. Share google album (create link)
+3. From shared album link click on image
+4. Copy image address
 
 ## Available Scripts
 
