@@ -6,6 +6,7 @@ import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import React, { Component } from 'react';
 
 import CustomLightbox from './components/CustomLightbox';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import { ALL_IMAGES } from './constants/images';
 
@@ -38,6 +39,9 @@ class App extends Component {
             {imageLinks}
           </Grid>
         </main>
+        <footer className="app-container">
+          <Footer />
+        </footer>
       </MuiThemeProvider>
     );
   }
