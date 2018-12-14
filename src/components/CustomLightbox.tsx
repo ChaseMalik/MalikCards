@@ -17,7 +17,8 @@ export default class CustomLightbox extends Component<Props, any> {
             currentImage: 0,
         };
     }
-    toggleLightbox = (selectedIndex: number) => {
+    toggleLightbox = (selectedIndex: number, event) => {
+        event && event.preventDefault();
         this.setState(state => ({
             selectedIndex,
             lightboxIsOpen: !state.lightboxIsOpen,
@@ -27,9 +28,9 @@ export default class CustomLightbox extends Component<Props, any> {
     public render() {
         return (
             <>
-                <div className="card-cover" onClick={() => this.toggleLightbox(0)}>
+                <a className="card-cover" onClick={(e) => this.toggleLightbox(0, e)} href={this.props.images[0].source}>
                     <img src={this.props.images[0].source} />
-                </div>
+                </a>
                 <ModalGateway>
                     {this.state.lightboxIsOpen ? (
                         <Modal onClose={this.toggleLightbox}>
