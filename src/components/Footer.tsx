@@ -10,11 +10,10 @@ const Footer = () => {
             color="textSecondary"
             align="right"
         >
-            {'Built with '}
-            <span role="img" aria-label="Love">
-                ❤️
+            <span role="img" aria-label="Present">
+                🎁
             </span>
-            {' by Chase'}
+            {' from Chase'}
         </Typography>
     );
 }
