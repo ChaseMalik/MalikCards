@@ -48,3 +48,30 @@ class App extends Component {
 }
 
 export default App;
+
+console.log('process.env.REACT_APP_REPOSITORY_URL');
+console.log(process.env.REACT_APP_REPOSITORY_URL);
+console.log('process.env.REACT_APP_BRANCH');
+console.log(process.env.REACT_APP_BRANCH);
+console.log('process.env.REACT_APP_PULL_REQUEST');
+console.log(process.env.REACT_APP_PULL_REQUEST);
+console.log('process.env.REACT_APP_HEAD');
+console.log(process.env.REACT_APP_HEAD);
+console.log('process.env.REACT_APP_COMMIT_REF');
+console.log(process.env.REACT_APP_COMMIT_REF);
+console.log('process.env.REACT_APP_CONTEXT');
+console.log(process.env.REACT_APP_CONTEXT);
+console.log('process.env.REACT_APP_REVIEW_ID');
+console.log(process.env.REACT_APP_REVIEW_ID);
+console.log('process.env.REACT_APP_INCOMING_HOOK_TITLE');
+console.log(process.env.REACT_APP_INCOMING_HOOK_TITLE);
+console.log('process.env.REACT_APP_INCOMING_HOOK_URL');
+console.log(process.env.REACT_APP_INCOMING_HOOK_URL);
+console.log('process.env.REACT_APP_INCOMING_HOOK_BODY');
+console.log(process.env.REACT_APP_INCOMING_HOOK_BODY);
+console.log('process.env.REACT_APP_URL');
+console.log(process.env.REACT_APP_URL);
+console.log('process.env.REACT_APP_DEPLOY_URL');
+console.log(process.env.REACT_APP_DEPLOY_URL);
+console.log('process.env.REACT_APP_DEPLOY_PRIME_URL');
+console.log(process.env.REACT_APP_DEPLOY_PRIME_URL);
