@@ -1,22 +1,24 @@
-import { StyleRulesCallback, withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
+import { ViewType } from 'react-images';
 
 import CustomLightbox from './CustomLightbox';
 
-const styles: StyleRulesCallback = theme => ({
-    heroContent: {
-        display: 'flex',
-        justifyContent: 'center',
-        padding: `${theme.spacing.unit * 3}px 0 0`,
-    },
-});
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    justifyContent: 'center',
+    padding: `${theme.spacing(3)}px 0 0`,
+  },
+}));
 
-const Hero = ({ classes, images }) => {
-    return (
-        <div className={classes.heroContent}>
-            <CustomLightbox images={images} />
-        </div>
-    );
-}
+const Hero = ({ images }: { images: ViewType[] }) => {
+  const { root } = useStyles();
+  return (
+    <div className={root}>
+      <CustomLightbox images={images} />
+    </div>
+  );
+};
 
-export default withStyles(styles)(Hero);
+export default Hero;

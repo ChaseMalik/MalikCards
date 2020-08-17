@@ -1,47 +1,53 @@
-import './CustomLightbox.css';
+import { makeStyles } from '@material-ui/core';
+import React, { useState } from 'react';
+import Carousel, { Modal, ModalGateway, ViewType } from 'react-images';
 
-import React, { Component } from 'react';
-import Carousel, { Image, Modal, ModalGateway } from 'react-images';
+const useStyles = makeStyles({
+  root: {
+    '&:hover': {
+      opacity: 0.9,
+    },
+  },
+  image: {
+    maxWidth: '100%',
+  },
+});
 
-interface Props {
-    images: Image[];
-}
+const CustomLightbox = ({ images }: { images: ViewType[] }) => {
+  const { root, image } = useStyles();
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleLightbox = (event) => {
+    event && event.preventDefault();
+    setIsOpen((o) => !o);
+  };
+  return (
+    <>
+      <a
+        className={root}
+        onClick={toggleLightbox}
+        href={images[0].source as string}
+      >
+        <img src={images[0].source as string} className={image} />
+      </a>
+      <ModalGateway>
+        {isOpen ? (
+          <Modal onClose={toggleLightbox}>
+            <Carousel
+              views={images}
+              styles={{
+                view: (base) => ({
+                  ...base,
+                  '& > img': {
+                    maxHeight: '100vh',
+                  },
+                }),
+              }}
+            />
+          </Modal>
+        ) : null}
+      </ModalGateway>
+    </>
+  );
+};
 
-export default class CustomLightbox extends Component<Props, any> {
-
-    constructor(props: Props) {
-        super(props);
-
-        this.state = {
-            lightboxIsOpen: false,
-            currentImage: 0,
-        };
-    }
-    toggleLightbox = (selectedIndex: number, event) => {
-        event && event.preventDefault();
-        this.setState(state => ({
-            selectedIndex,
-            lightboxIsOpen: !state.lightboxIsOpen,
-        }));
-    };
-
-    public render() {
-        return (
-            <>
-                <a className="card-cover" onClick={(e) => this.toggleLightbox(0, e)} href={this.props.images[0].source}>
-                    <img src={this.props.images[0].source} />
-                </a>
-                <ModalGateway>
-                    {this.state.lightboxIsOpen ? (
-                        <Modal onClose={this.toggleLightbox}>
-                            <Carousel
-                                views={this.props.images}
-                                currentIndex={this.state.currentImage}
-                            />
-                        </Modal>
-                    ) : null}
-                </ModalGateway>
-            </>
-        );
-    }
-}
+export default CustomLightbox;
