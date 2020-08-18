@@ -1,32 +1,28 @@
+import { makeStyles } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
-import { StyleRulesCallback, withStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import MailIcon from '@material-ui/icons/Mail';
 import React from 'react';
 
+const useStyles = makeStyles((theme) => ({
+  icon: {
+    marginRight: theme.spacing(2),
+  },
+}));
 
-const styles: StyleRulesCallback = theme => ({
-    appBar: {
-        position: 'relative',
-        zIndex: 0,
-    },
-    icon: {
-        marginRight: theme.spacing.unit * 2,
-    },
-});
+const Header = () => {
+  const { icon } = useStyles();
+  return (
+    <AppBar position="static">
+      <Toolbar className="app-container" disableGutters>
+        <MailIcon className={icon} />
+        <Typography variant="h6" color="inherit" noWrap>
+          Malik Cards
+        </Typography>
+      </Toolbar>
+    </AppBar>
+  );
+};
 
-const Header = ({ classes }) => {
-    return (
-        <AppBar position="static" className={classes.appBar}>
-            <Toolbar className="app-container" disableGutters>
-                <MailIcon className={classes.icon} />
-                <Typography variant="h6" color="inherit" noWrap>
-                    Malik Cards
-                </Typography>
-            </Toolbar>
-        </AppBar>
-    );
-}
-
-export default withStyles(styles)(Header);
+export default Header;
