@@ -1,5 +1,4 @@
 import { Grid, makeStyles } from '@material-ui/core';
-
 import CustomLightbox from '../src/components/CustomLightbox';
 import Footer from '../src/components/Footer';
 import Header from '../src/components/Header';
