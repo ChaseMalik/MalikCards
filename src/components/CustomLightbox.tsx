@@ -35,6 +35,7 @@ const CustomLightbox = ({ images }: { images: ViewType[] }) => {
         <Image
           src={src}
           className={image}
+          sizes="33vw"
           width={width}
           height={height}
           layout="responsive"
