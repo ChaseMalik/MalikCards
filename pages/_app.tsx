@@ -1,5 +1,3 @@
-import '../styles/index.css';
-
 import {
   createMuiTheme,
   CssBaseline,
@@ -10,6 +8,7 @@ import { deepOrange, lightBlue } from '@material-ui/core/colors';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useEffect, useMemo } from 'react';
+import '../styles/index.css';
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
