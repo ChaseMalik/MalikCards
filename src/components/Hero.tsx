@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles';
-import React from 'react';
 import { ViewType } from 'react-images';
 import CustomLightbox from './CustomLightbox';
 

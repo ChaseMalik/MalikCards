@@ -6,7 +6,7 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document';
-import React from 'react';
+import { Children } from 'react';
 
 export default class MyDocument extends Document {
   render() {
@@ -85,7 +85,7 @@ export default class MyDocument extends Document {
       ...initialProps,
       // Styles fragment is rendered after the app and page rendering finish.
       styles: [
-        ...React.Children.toArray(initialProps.styles),
+        ...Children.toArray(initialProps.styles),
         sheets.getStyleElement(),
       ],
     };

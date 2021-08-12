@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Carousel, { Modal, ModalGateway, ViewType } from 'react-images';
 
 const useStyles = makeStyles({
