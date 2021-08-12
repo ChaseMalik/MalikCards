@@ -1,5 +1,5 @@
 import {
-  createMuiTheme,
+  createTheme,
   CssBaseline,
   ThemeProvider,
   useMediaQuery,
@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [darkMode]);
 
   const muiTheme = useMemo(() => {
-    return createMuiTheme({
+    return createTheme({
       palette: {
         primary: deepOrange,
         secondary: lightBlue,
