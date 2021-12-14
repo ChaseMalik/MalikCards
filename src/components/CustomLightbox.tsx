@@ -1,20 +1,7 @@
-import { makeStyles } from '@material-ui/core';
 import { useState } from 'react';
 import Carousel, { Modal, ModalGateway, ViewType } from 'react-images';
 
-const useStyles = makeStyles({
-  root: {
-    '&:hover': {
-      opacity: 0.9,
-    },
-  },
-  image: {
-    maxWidth: '100%',
-  },
-});
-
 const CustomLightbox = ({ images }: { images: ViewType[] }) => {
-  const { root, image } = useStyles();
   const [isOpen, setIsOpen] = useState(false);
   const toggleLightbox = (event) => {
     event && event.preventDefault();
@@ -23,11 +10,11 @@ const CustomLightbox = ({ images }: { images: ViewType[] }) => {
   return (
     <>
       <a
-        className={root}
+        className="hover:opacity-80 focus:opacity-80"
         onClick={toggleLightbox}
         href={images[0].source as string}
       >
-        <img src={images[0].source as string} className={image} />
+        <img src={images[0].source as string} className="max-w-full" />
       </a>
       <ModalGateway>
         {isOpen ? (
