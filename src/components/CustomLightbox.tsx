@@ -9,13 +9,12 @@ const CustomLightbox = ({ images }: { images: ViewType[] }) => {
   };
   return (
     <>
-      <a
-        className="hover:opacity-80 focus:opacity-80"
+      <button
+        className="hover:opacity-80 focus:opacity-80 aspect-[4/3]"
         onClick={toggleLightbox}
-        href={images[0].source as string}
       >
         <img src={images[0].source as string} className="max-w-full" />
-      </a>
+      </button>
       <ModalGateway>
         {isOpen ? (
           <Modal onClose={toggleLightbox}>
