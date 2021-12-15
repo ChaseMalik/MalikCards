@@ -10,7 +10,7 @@ const CustomLightbox = ({ images }: { images: ViewType[] }) => {
   return (
     <>
       <button
-        className="hover:opacity-80 focus:opacity-80"
+        className="hover:opacity-80 focus:opacity-80 aspect-[4/3]"
         onClick={toggleLightbox}
       >
         <img src={images[0].source as string} className="max-w-full" />
