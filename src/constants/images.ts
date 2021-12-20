@@ -7,6 +7,10 @@ const SPIRIT_2021 = [
   'https://lh3.googleusercontent.com/pw/AM-JKLXLay-xT1x1QToeGFiqWFN7DK9CsDw8xQl-6rUXRxfJ0xjkkZNIRoSgtYeZ1UFJp6-tilXViBVeAATWFz3EomkOHyHPPq0jt1gg2aqNBWftloJXliQ-42LC-u5-hhN9d1OXEfeaqJm_cu58CUK_lYVw=w1200-h901-no',
   'https://lh3.googleusercontent.com/pw/AM-JKLWRrYTDbiw_6oALMEe7jnnImOks1eDi-7RRBxvzykGKUFWosrIBhT0OBF-i_Vwlsw3wvhlWgt2kC2w4FYVsASmqtGKRiM3UMJS9KiGgcfi3uEI833F0E6KPmql3Yp7HGXAZisJXBNloxzfns3oFanqc=w1200-h901-no',
   'https://lh3.googleusercontent.com/pw/AM-JKLX7a5PJ2qKHLlJjp2ygwmAc9bWOnbtNRpzUPbC1lZH-Nj8gfi4N2CdbYaL_HgsAIutrDFWhaDxGj5zgZhFS6sCuPBL7UbDslVPDIHs37chLfPhovCmnMW_7eT2ndgUri8NRFa5XvTlGD5BBaA7rW4SY=w1200-h901-no',
+  'https://lh3.googleusercontent.com/pw/AM-JKLU5T6EPWts5anbn8MomraV674Ev0uPcrJng5-0ZI83DEleB6olK43INhKgqpHp_BJkKb-S1x_kBsq7Y2za2_ZALlnzoId78bGePKKckvDwMCYHbRQtjNoP406uh3lEZ2jo4svFHyuAA3jNBMamEnnxk=w1200-h901-no',
+  'https://lh3.googleusercontent.com/pw/AM-JKLU7NUj2wI0FcJKy8LY5__LAjoqlcG3G_7YNmNVJmqvTHd-ZM_wYcRF6YszDysP5x0-omMNnjF00r6A3NpFTD_CYxtF_ZlKf7qo11YsxeZA-gaGjz0M6EhMOHgrfWz7NKkc-GICdjldwR5s1C9lRGeNi=w1200-h901-no',
+  'https://lh3.googleusercontent.com/pw/AM-JKLXiWRVUEpQ7P300HpzyuXmAUbPSl2wveYaU6r37OEv6ZOC2_fEu95_EOR7LLzCBIKN406-e3zhRMpyqyGETFtvOm-8EA5Ac_6ErmWQGY2t594irIqYtqDBZMBTjVLt2MqNsxrR6ZyygGfD4AzsQbuKY=w1200-h901-no',
+  'https://lh3.googleusercontent.com/pw/AM-JKLWmLzKiGtYXA9xUIzpaht7v7cOBqiWBsL70nQi7vWdyCAp-4aNlbgyXbxV0rhBqh_1L0uD3Xi3aOTn74dO5g5RDgOqmb7LCUfZL1nhwB1rA6Z-0bl-U_yoB3d9tfGw5sSu01PxCHv2Bi0Xm23fhY-U2=w1200-h901-no',
 ];
 
 const FRIENDS_2020 = [
