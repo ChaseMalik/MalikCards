@@ -1,3 +1,7 @@
+const DREAM_2023 = [
+  'https://lh3.googleusercontent.com/pw/ADCreHdiWtCO-5UxPs_JJ_5wrUdq4nMD5896mC37SB-EPwcxHx7_qUjWSBARie2ZRQsBN_vf94R5qfhMeyH1EGVpEOLMSAqQAURd7YO45S6nmEKjHKb-xFDNhPlNi91v3UMot6kJ-a2YDzIgEZPNW6AaKkV2=w1200-h900-s-no-gm',
+];
+
 const SPIRIT_2021 = [
   'https://lh3.googleusercontent.com/pw/AM-JKLWNlqiLryuWcjbRRtNhClPfuK7cLq-fNFc4yWCa9f9lcZmAnTv7g4qiU2ovYzEXBcQtfS-O5AH3XMarJk21hpO7M2LL1uIITmQLyMe-jRzB7JTEfpCT61P_8a79CHkgFw9DLYGJWfQRtRL6Mng-UJAa=w1200-h901-no',
   'https://lh3.googleusercontent.com/pw/AM-JKLXfM0tID3ZpPHGaO8DARQ9CPJzTu9iOaJZIQXHIj_zh-Szg5z36u4vzZoa2JMs20-Hq3BcJphOYzQeoaeApMo01VW9VGe2EEdIFnxfChIm9TWBU0Z9gpqGULt8YywurFM8y6TBYlKpA9aPpR7mE7Tiw=w1200-h901-no',
@@ -131,6 +135,7 @@ const HOPE_2008 = [
 ];
 
 export const ALL_IMAGES = [
+  DREAM_2023,
   SPIRIT_2021,
   FRIENDS_2020,
   MAGIC_2018,
