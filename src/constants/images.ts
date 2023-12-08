@@ -1,5 +1,5 @@
 const DREAM_2023 = [
-  'https://lh3.googleusercontent.com/pw/ADCreHdiWtCO-5UxPs_JJ_5wrUdq4nMD5896mC37SB-EPwcxHx7_qUjWSBARie2ZRQsBN_vf94R5qfhMeyH1EGVpEOLMSAqQAURd7YO45S6nmEKjHKb-xFDNhPlNi91v3UMot6kJ-a2YDzIgEZPNW6AaKkV2=w1200-h900-s-no-gm',
+  'https://lh3.googleusercontent.com/pw/ADCreHe3wNQrUtoH7TDOfifMNCR5p1g1JvfkM386XS7BjcwBaQmDVs1RSYhu6K7juu2bkkH4TVoDTDCipM4I1XGFkzK47qy9JOr-dwrCzhCpWNCOuK3JZQ-avbgpYD5KcZsbxCvjMgEVVh0cRi1FOL4zifPe=w1200-h900-s-no-gm',
 ];
 
 const SPIRIT_2021 = [
