@@ -1,6 +1,7 @@
 const DREAM_2023 = [
   'https://lh3.googleusercontent.com/pw/ADCreHe3wNQrUtoH7TDOfifMNCR5p1g1JvfkM386XS7BjcwBaQmDVs1RSYhu6K7juu2bkkH4TVoDTDCipM4I1XGFkzK47qy9JOr-dwrCzhCpWNCOuK3JZQ-avbgpYD5KcZsbxCvjMgEVVh0cRi1FOL4zifPe=w1200-h900-s-no-gm',
   'https://lh3.googleusercontent.com/pw/ADCreHfxDgaiQM4ar0Ut-y-FzPJIv_81tys-mjDgVPYyb5awnKrk21jbLO2EKYghCOZpvg8YqwtdjpiL8LcmkMyinJ2hWBiABeWw07_fSUyKDdOyxnvIUq7ht1vrnpG_eccm7I9rcjJRThmk4qfbRGZvW_wg=w1200-h900-s-no-gm',
+  'https://lh3.googleusercontent.com/pw/ADCreHePaAwdt6S0TNa1OJ4w2rCUKCAbdhFWoYbu5lADocaN4KmeuRsqPAqV3up8xv0qJDBvxpqbLcuBPbY-vQ1M4kyIUM86no_nn_N00g_deW8iw7aPSUE2OnV_dRncMPmFMAeg8Lm1VPmcX2v-Z9n0Jl_d=w1200-h900-s-no-gm',
 ];
 
 const SPIRIT_2021 = [
