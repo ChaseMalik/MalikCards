@@ -6,6 +6,7 @@ const LOVE_2025 = [
   'https://lh3.googleusercontent.com/pw/AP1GczOxnK8bpVgJMtARXjHdzhtom5eNzh55wnKgxP6y5w5_nEC7Xm8NTfiZybn5z_-RZArlpznMvswSSwGw6q12Lq8QxFdSZgSJ9xS5z_cWBzk5ZOBn_aSLZv7KP8j8j8-LHpUr5NyoXJnGGYkkmUFMMusI=w1200-h900-s-no-gm',
   'https://lh3.googleusercontent.com/pw/AP1GczMXUsmLo9t_uO1Q6kQX2ZmggURNPeJ7XuALyezXQN840i-uiyoUxPCPEDQFL3471WjOSO3_qR16izfd9DOEFDu6X2vQaJkigFBhX0bxYTRLv-TPjtjvQLXAIehAS41k5JToqF7YXJwvCX0gx0Vz3V8c=w1200-h900-s-no-gm',
   'https://lh3.googleusercontent.com/pw/AP1GczOa7-eXqZZU4N1bPlWcsMEbl_rO6w0V4XEG4BDJmr15jG-H-XAlnAyUVm3Q9Qm88To0Swacsyc8WfCHNUilUyomv30av0ndA15Uv8t-3kCDZpyq8lZ0E23ERNHHZv6LZnvW1Z2trxh8U5sLyZROK1gr=w1200-h900-s-no-gm',
+  'https://lh3.googleusercontent.com/pw/AP1GczOVJ7T8AO8dfphx952UiDg8MILXlT1fhMpGjQvotOdPPITueVUPELyVHAQza08IhdsYLvauBEBqcSnf6EoAj51YsHeae2pAIvqhGyCto4ONFgldNoAjQOdv6lawApXpOqdp0151baBhHPqWW_ZC-vAp=w1200-h900-s-no-gm',
 ];
 
 const DREAM_2023 = [
